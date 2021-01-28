@@ -798,9 +798,9 @@
                                 </path>
                             </svg>
                         </div>
-                        <div class="text-xl font-bold text-gray-600 group-hover:text-white">
+                        <h4 class="text-xl font-bold text-gray-600 group-hover:text-white">
                             Seo
-                        </div>
+                        </h4>
                         <p class="text-sm lg:text-base font-medium text-gray-500 group-hover:text-gray-100">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam fugit quaerat, cumque
                             molestiae explicabo molestias sequi nulla natus corporis.
@@ -820,9 +820,9 @@
                                 </path>
                             </svg>
                         </div>
-                        <div class="text-xl font-bold text-gray-600 group-hover:text-white">
+                        <h4 class="text-xl font-bold text-gray-600 group-hover:text-white">
                             Facebook Marketing
-                        </div>
+                        </h4>
                         <p class="text-sm lg:text-base font-medium text-gray-500 group-hover:text-gray-100">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam fugit quaerat, cumque
                             molestiae explicabo molestias sequi nulla natus corporis.
@@ -844,9 +844,9 @@
                                     d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </div>
-                        <div class="text-xl font-bold text-gray-600 group-hover:text-white">
+                        <h4 class="text-xl font-bold text-gray-600 group-hover:text-white">
                             Youtube
-                        </div>
+                        </h4>
                         <p class="text-sm lg:text-base font-medium text-gray-500 group-hover:text-gray-100">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam fugit quaerat, cumque
                             molestiae explicabo molestias sequi nulla natus corporis.
@@ -866,9 +866,9 @@
                                 </path>
                             </svg>
                         </div>
-                        <div class="text-xl font-bold text-gray-600 group-hover:text-white">
+                        <h4 class="text-xl font-bold text-gray-600 group-hover:text-white">
                             Content Writing
-                        </div>
+                        </h4>
                         <p class="text-sm lg:text-base font-medium text-gray-500 group-hover:text-gray-100">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam fugit quaerat, cumque
                             molestiae explicabo molestias sequi nulla natus corporis.
@@ -887,9 +887,9 @@
                                     d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                             </svg>
                         </div>
-                        <div class="text-xl font-bold text-gray-600 group-hover:text-white">
+                        <h4 class="text-xl font-bold text-gray-600 group-hover:text-white">
                             Web design
-                        </div>
+                        </h4>
                         <p class="text-sm lg:text-base font-medium text-gray-500 group-hover:text-gray-100">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam fugit quaerat, cumque
                             molestiae explicabo molestias sequi nulla natus corporis.
@@ -911,9 +911,9 @@
                                 <path d="M17 10l-3-3"></path>
                             </svg>
                         </div>
-                        <div class="text-xl font-bold text-gray-600 group-hover:text-white">
+                        <h4 class="text-xl font-bold text-gray-600 group-hover:text-white">
                             Graphic Design
-                        </div>
+                        </h4>
                         <p class="text-sm lg:text-base font-medium text-gray-500 group-hover:text-gray-100">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam fugit quaerat, cumque
                             molestiae explicabo molestias sequi nulla natus corporis.
@@ -1224,6 +1224,14 @@
     </footer>
 
 
+    <section x-data="{ atTop: true }">
+        <a href="#home" class="w-12 h-12 fixed bottom-0 z-50 right-0 m-8 focus:outline-none rounded-lg flex items-center justify-center transition ease-linear duration-300 bg-white shadow-md border" :class="{ 'bg-white shadow-md border' : !atTop }" @scroll.window="atTop = (window.pageYOffset > 40) ? false : true">
+            <svg class="h-6 w-6 fill-current text-transparent ease-linear duration-300 text-yellow-500" :class="{ 'text-yellow-500' : !atTop }" @scroll.window="atTop = (window.pageYOffset > 40) ? false : true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M15.484 12.452c-.436.446-1.043.481-1.576 0L10 8.705l-3.908 3.747c-.533.481-1.141.446-1.574 0-.436-.445-.408-1.197 0-1.615.406-.418 4.695-4.502 4.695-4.502a1.095 1.095 0 011.576 0s4.287 4.084 4.695 4.502c.409.418.436 1.17 0 1.615z">
+                </path>
+            </svg>
+        </a>
+    </section>
 
 
 

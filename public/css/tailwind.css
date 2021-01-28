@@ -839,6 +839,10 @@ video {
   line-height: 2.5rem;
 }
 
+.m-8 {
+  margin: 2rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1053,6 +1057,14 @@ video {
   top: 0px;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
 .resize-none {
   resize: none;
 }
@@ -1101,6 +1113,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-transparent {
+  color: transparent;
 }
 
 .text-facebook {
@@ -1252,6 +1268,10 @@ video {
 
 .z-20 {
   z-index: 20;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .gap-4 {
