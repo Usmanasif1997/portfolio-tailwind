@@ -20,7 +20,11 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
 
-      theme1: '#ff9442',
+      facebook: '#1877F2',
+      instagram: '#E4405F',
+      twitter: '#1DA1F2',
+      dribbble: '#EA4C89',
+      linkedin: '#0077B5',
 
       black: colors.black,
       white: colors.white,
@@ -858,5 +862,7 @@ module.exports = {
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus'],
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }
