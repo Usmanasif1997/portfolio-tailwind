@@ -3,24 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- Basic Seo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative Portfolio with html5,css3,jquery,alpinejs & tailwindcss ">
+    <meta name="keywords"
+        content="HTML5,CSS3,JQUERY,tailwindcss, Web Design,Web Development,Responsive Website, Creative Website, Creative Portfolio">
+    <link rel="canonical" href="" />
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Creative Portfolio Design 1 | Illustration Themes</title>
+    <!-- Tailwind Minified CSS -->
     <link rel="stylesheet" href="css/tailwind.css">
+    <!-- Image Hover CSS -->
     <link rel="stylesheet" href="css/imagehover.min.css">
+    <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Cdn of Fancybox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!-- Cdn of Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <title>Portfolio Design 1 | Illustration Themes</title>
 </head>
 
 <body style="font-family: 'Quicksand', sans-serif;">
 
 
-
+    <!-- Navigation -->
     <header x-data="{ isOpen: false , atTop: true }">
         <div class="fixed z-20 w-full transition ease-linear duration-300 py-2"
             :class="{ 'bg-white shadow-lg border-b' : !atTop }"
@@ -63,8 +75,7 @@
                                 </a>
                                 <div class="ml-8">
                                     <a href="#contact">
-                                        <button type="button"
-                                            class="btn-dark">
+                                        <button type="button" class="btn-dark">
                                             Contact Me
                                         </button>
                                     </a>
@@ -100,7 +111,8 @@
                                     <a @click="isOpen = !isOpen" href="#myintro" class="nav-sm-item">My Intro</a>
                                     <a @click="isOpen = !isOpen" href="#services" class="nav-sm-item">Services</a>
                                     <a @click="isOpen = !isOpen" href="#portfolio" class="nav-sm-item">Portfolio</a>
-                                    <a @click="isOpen = !isOpen" href="#testimonials" class="nav-sm-item">Testimonials</a>
+                                    <a @click="isOpen = !isOpen" href="#testimonials"
+                                        class="nav-sm-item">Testimonials</a>
                                     <a @click="isOpen = !isOpen" href="#contact" class="nav-sm-item">Contact Us</a>
                                 </div>
                             </div>
@@ -110,9 +122,10 @@
             </div>
         </div>
     </header>
-
-
-    <section class="py-32 bg-no-repeat bg-cover bg-gray-50 border" id="home" style="background-image: url('img/bg.png');">
+    <!-- Navigation End -->
+    <!-- Hero Section -->
+    <section class="py-32 bg-no-repeat bg-cover bg-gray-50 border" id="home"
+        style="background-image: url('img/bg.png');">
         <div class="container mx-auto">
             <div class="flex flex-wrap flex-row-reverse justify-center">
                 <div class="w-full md:w-1/2 flex justify-center p-4">
@@ -120,7 +133,7 @@
                         class="shadow-lg border-8 rounded-full h-64 w-64 sm:h-72 sm:w-72 lg:h-96 lg:w-96 flex-shrink-0 max-w-xl">
                         <img class="h-full w-full rounded-full object-cover"
                             src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                            alt="">
+                            alt="Hero">
                     </figure>
                 </div>
                 <div class="w-full md:w-1/2 p-4">
@@ -142,16 +155,14 @@
                     <div class="mt-8 sm:flex items-center space-y-4 sm:space-y-0 sm:space-x-4">
                         <div>
                             <a href="" class="flex">
-                                <button
-                                    class="btn-dark">
+                                <button class="btn-dark">
                                     Download CV
                                 </button>
                             </a>
                         </div>
                         <div>
                             <a href="" class="flex">
-                                <button
-                                    class="btn-outline">
+                                <button class="btn-outline">
                                     Contact Me
                                 </button>
                             </a>
@@ -161,6 +172,8 @@
             </div>
         </div>
     </section>
+    <!-- Hero Section End-->
+    <!-- Project, Experience & Support -->
     <section class="-mt-20 transform p-4">
         <div class="container mx-auto">
             <div class="border max-w-6xl mx-auto rounded-lg lg:rounded-full bg-white shadow-lg p-4">
@@ -234,6 +247,8 @@
             </div>
         </div>
     </section>
+    <!-- Project, Experience & Support End -->
+    <!-- Intro -->
     <section class="py-32" id="myintro">
         <div class="container mx-auto">
             <div class="flex flex-wrap">
@@ -244,7 +259,7 @@
 
                         </div>
                         <img src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                            class="relative h-64 sm:h-80 md:h-72 lg:h-96 w-auto rounded-3xl bg-cover" alt="">
+                            class="relative h-64 sm:h-80 md:h-72 lg:h-96 w-auto rounded-3xl bg-cover" alt="Intro">
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 p-4">
@@ -386,6 +401,8 @@
             </div>
         </div>
     </section>
+    <!-- Intro End -->
+    <!-- My Expertise Area -->
     <section class="py-32 bg-gray-50 border bg-cover" style="background-image: url('img/bg2.png');">
         <div class="container mx-auto">
             <div class="p-4 max-w-5xl mx-auto text-center space-y-4">
@@ -536,6 +553,8 @@
             </div>
         </div>
     </section>
+    <!-- My Expertise Area End -->
+    <!-- Awesome Journey -->
     <section class="py-32">
         <div class="container mx-auto">
             <div class="p-4 max-w-5xl mx-auto text-center space-y-4">
@@ -775,7 +794,10 @@
 
         </div>
     </section>
-    <section class="py-32 bg-gray-50 border bg-no-repeat bg-cover" id="services" style="background-image: url('img/bg.png');">
+    <!-- Awesome Journey End -->
+    <!-- What I Offer -->
+    <section class="py-32 bg-gray-50 border bg-no-repeat bg-cover" id="services"
+        style="background-image: url('img/bg.png');">
         <div class="container mx-auto">
             <div class="p-4 max-w-5xl mx-auto text-center space-y-4">
                 <h5 class="text-lg font-medium text-yellow-500">
@@ -924,6 +946,8 @@
             </div>
         </div>
     </section>
+    <!-- What I Offer End -->
+    <!-- Portfolio -->
     <section class="py-32" id="portfolio">
         <div class="container mx-auto">
             <div class="p-4 max-w-5xl mx-auto text-center space-y-4">
@@ -937,7 +961,7 @@
             <div class="flex flex-wrap mt-12">
                 <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
                     <figure class="imghvr-fade h-72 w-full rounded-lg">
-                        <img src="img/work1.jpeg" class="h-full w-full object-cover">
+                        <img src="img/work1.jpeg" class="h-full w-full object-cover" alt="Portfolio">
                         <figcaption>
                             // Hover Content
                         </figcaption>
@@ -946,7 +970,7 @@
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
                     <figure class="imghvr-fade h-72 w-full rounded-lg">
-                        <img src="img/work2.jpeg" class="h-full w-full object-cover">
+                        <img src="img/work2.jpeg" class="h-full w-full object-cover" alt="Portfolio">
                         <figcaption>
                             // Hover Content
                         </figcaption>
@@ -955,7 +979,7 @@
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
                     <figure class="imghvr-fade h-72 w-full rounded-lg">
-                        <img src="img/work3.jpeg" class="h-full w-full object-cover">
+                        <img src="img/work3.jpeg" class="h-full w-full object-cover" alt="Portfolio">
                         <figcaption>
                             // Hover Content
                         </figcaption>
@@ -964,7 +988,7 @@
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
                     <figure class="imghvr-fade h-72 w-full rounded-lg">
-                        <img src="img/work4.jpeg" class="h-full w-full object-cover">
+                        <img src="img/work4.jpeg" class="h-full w-full object-cover" alt="Portfolio">
                         <figcaption>
                             // Hover Content
                         </figcaption>
@@ -973,7 +997,7 @@
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
                     <figure class="imghvr-fade h-72 w-full rounded-lg">
-                        <img src="img/work5.jpeg" class="h-full w-full object-cover">
+                        <img src="img/work5.jpeg" class="h-full w-full object-cover" alt="Portfolio">
                         <figcaption>
                             // Hover Content
                         </figcaption>
@@ -982,7 +1006,7 @@
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
                     <figure class="imghvr-fade h-72 w-full rounded-lg">
-                        <img src="img/work6.jpeg" class="h-full w-full object-cover">
+                        <img src="img/work6.jpeg" class="h-full w-full object-cover" alt="Portfolio">
                         <figcaption>
                             // Hover Content
                         </figcaption>
@@ -991,7 +1015,7 @@
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
                     <figure class="imghvr-fade h-72 w-full rounded-lg">
-                        <img src="img/work7.jpeg" class="h-full w-full object-cover">
+                        <img src="img/work7.jpeg" class="h-full w-full object-cover" alt="Portfolio">
                         <figcaption>
                             // Hover Content
                         </figcaption>
@@ -1000,7 +1024,7 @@
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
                     <figure class="imghvr-fade h-72 w-full rounded-lg">
-                        <img src="img/work8.jpg" class="h-full w-full object-cover">
+                        <img src="img/work8.jpg" class="h-full w-full object-cover" alt="Portfolio">
                         <figcaption>
                             // Hover Content
                         </figcaption>
@@ -1009,7 +1033,7 @@
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
                     <figure class="imghvr-fade h-72 w-full rounded-lg">
-                        <img src="img/work9.jpeg" class="h-full w-full object-cover">
+                        <img src="img/work9.jpeg" class="h-full w-full object-cover" alt="Portfolio">
                         <figcaption>
                             // Hover Content
                         </figcaption>
@@ -1018,7 +1042,7 @@
                 </div>
                 <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
                     <figure class="imghvr-fade h-72 w-full rounded-lg">
-                        <img src="img/work10.jpeg" class="h-full w-full object-cover">
+                        <img src="img/work10.jpeg" class="h-full w-full object-cover" alt="Portfolio">
                         <figcaption>
                             // Hover Content
                         </figcaption>
@@ -1028,6 +1052,8 @@
             </div>
         </div>
     </section>
+    <!-- Portfolio End -->
+    <!-- Support -->
     <section class="py-32 bg-yellow-500">
         <div class="container mx-auto">
             <div class="p-4 max-w-5xl mx-auto text-center">
@@ -1040,8 +1066,7 @@
                 </p>
                 <div class="mt-8">
                     <a href="" class="flex justify-center ">
-                        <button
-                            class="btn-white">
+                        <button class="btn-white">
                             Contact Me
                         </button>
                     </a>
@@ -1049,6 +1074,8 @@
             </div>
         </div>
     </section>
+    <!-- Support End -->
+    <!-- Testimonials -->
     <section class="py-32 bg-cover" id="testimonials" style="background-image: url('img/bg.png');">
         <div class="container mx-auto">
             <div class="p-4 max-w-5xl mx-auto text-center space-y-4">
@@ -1062,10 +1089,10 @@
             <div class="mt-12">
                 <div class="owl-carousel owl-theme">
                     <div class="item p-4">
-                        <div class="">
+                        <div class="p-8">
                             <div class="h-20 w-20 rounded-full mx-auto">
                                 <img src="https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                    class="h-full w-full rounded-full object-cover" alt="">
+                                    class="h-full w-full rounded-full object-cover" alt="Testimonials">
                             </div>
                             <div class="text-center">
                                 <div class="mt-4">
@@ -1130,6 +1157,8 @@
             </div>
         </div>
     </section>
+    <!-- Testimonials End -->
+    <!-- Contact -->
     <section class="py-32 bg-gray-50 bg-cover" id="contact" style="background-image: url('img/map.png');">
         <div class="container mx-auto">
             <div class="p-4 max-w-5xl mx-auto text-center space-y-4">
@@ -1164,8 +1193,7 @@
                                 placeholder="Write Your Message Here ....." required=""></textarea>
                         </div>
                         <div class="col-span-12">
-                            <button type="submit"
-                                class="btn-dark">
+                            <button type="submit" class="btn-dark">
                                 Send
                             </button>
                         </div>
@@ -1175,7 +1203,8 @@
             </div>
         </div>
     </section>
-
+    <!-- Contact End -->
+    <!-- Footer -->
     <footer class="bg-gray-50">
         <div class="container mx-auto">
             <div class="p-4 text-center">
@@ -1222,27 +1251,38 @@
             </div>
         </div>
     </footer>
-
-
+    <!-- Footer End -->
+    <!-- Back-to-top -->
     <section x-data="{ atTop: true }">
-        <a href="#home" class="w-12 h-12 fixed bottom-0 z-50 right-0 m-8 focus:outline-none rounded-lg flex items-center justify-center transition ease-linear duration-300 bg-white shadow-md border" :class="{ 'bg-white shadow-md border' : !atTop }" @scroll.window="atTop = (window.pageYOffset > 40) ? false : true">
-            <svg class="h-6 w-6 fill-current text-transparent ease-linear duration-300 text-yellow-500" :class="{ 'text-yellow-500' : !atTop }" @scroll.window="atTop = (window.pageYOffset > 40) ? false : true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M15.484 12.452c-.436.446-1.043.481-1.576 0L10 8.705l-3.908 3.747c-.533.481-1.141.446-1.574 0-.436-.445-.408-1.197 0-1.615.406-.418 4.695-4.502 4.695-4.502a1.095 1.095 0 011.576 0s4.287 4.084 4.695 4.502c.409.418.436 1.17 0 1.615z">
+        <a href="#home"
+            class="w-12 h-12 fixed bottom-0 z-50 right-0 m-8 focus:outline-none rounded-lg flex items-center justify-center transition ease-linear duration-300 bg-white shadow-md border"
+            :class="{ 'bg-white shadow-md border' : !atTop }"
+            @scroll.window="atTop = (window.pageYOffset > 40) ? false : true">
+            <svg class="h-6 w-6 fill-current text-transparent ease-linear duration-300 text-yellow-500"
+                :class="{ 'text-yellow-500' : !atTop }"
+                @scroll.window="atTop = (window.pageYOffset > 40) ? false : true" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20">
+                <path
+                    d="M15.484 12.452c-.436.446-1.043.481-1.576 0L10 8.705l-3.908 3.747c-.533.481-1.141.446-1.574 0-.436-.445-.408-1.197 0-1.615.406-.418 4.695-4.502 4.695-4.502a1.095 1.095 0 011.576 0s4.287 4.084 4.695 4.502c.409.418.436 1.17 0 1.615z">
                 </path>
             </svg>
         </a>
     </section>
+    <!-- Back-to-top End -->
 
-
-
-
-
+    <!-- Jquery Library -->
     <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Owl Carousel Js -->
     <script src="js/owl.carousel.min.js"></script>
+    <!-- WOW JS -->
     <script src="js/wow.min.js"></script>
+    <!-- Typed JS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <!-- Fancybox JS -->
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Alpine Js -->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <!-- Custom Js -->
     <script src="js/script.js"></script>
 
 </body>

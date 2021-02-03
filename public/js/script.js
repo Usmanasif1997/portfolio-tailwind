@@ -1,6 +1,6 @@
 // Typed Js
 var typed = new Typed(".element", {
-  strings: ["Digital Marketing Expert", "Full Stack Developer", "Designer"],
+  strings: ["Product Manager","iOS developer"],
   typeSpeed: 100,
   backDelay: 3000,
   backSpeed: 50,
