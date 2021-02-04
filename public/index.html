@@ -1255,7 +1255,7 @@
     <!-- Back-to-top -->
     <section x-data="{ atTop: true }">
         <a href="#home"
-            class="w-12 h-12 fixed bottom-0 z-50 right-0 m-8 focus:outline-none rounded-lg flex items-center justify-center transition ease-linear duration-300 bg-white shadow-md border"
+            class="w-12 h-12 fixed bottom-0 z-100 right-0 m-8 focus:outline-none rounded-lg flex items-center justify-center transition ease-linear duration-300 bg-white shadow-md border"
             :class="{ 'bg-white shadow-md border' : !atTop }"
             @scroll.window="atTop = (window.pageYOffset > 40) ? false : true">
             <svg class="h-6 w-6 fill-current text-transparent ease-linear duration-300 text-yellow-500"
